@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Yicee Crew es un proyecto personal de desarrollo web y experimentos digitales."
+  >
+
+  <title>Yicee Crew</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      background:
+        radial-gradient(circle at top left, #5522aa55, transparent 35%),
+        radial-gradient(circle at bottom right, #00bcd433, transparent 35%),
+        #080a10;
+    }
+
+    nav {
+      width: min(1000px, 90%);
+      margin: auto;
+      padding: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #7d5cff;
+    }
+
+    nav a {
+      color: #c7c9d3;
+      text-decoration: none;
+    }
+
+    main {
+      width: min(1000px, 90%);
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .tag {
+      margin-bottom: 20px;
+      padding: 8px 14px;
+      border: 1px solid #ffffff22;
+      border-radius: 30px;
+      color: #9e88ff;
+      background: #ffffff08;
+    }
+
+    h1 {
+      max-width: 750px;
+      font-size: clamp(3rem, 10vw, 6rem);
+      line-height: 0.95;
+    }
+
+    h1 span {
+      color: #8065ff;
+    }
+
+    .description {
+      max-width: 650px;
+      margin-top: 25px;
+      color: #b4b6c2;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      padding: 13px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      color: white;
+      background: #6f50ff;
+    }
+
+    .secondary {
+      color: white;
+      border: 1px solid #ffffff25;
+      background: #ffffff0c;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 2.2rem;
+    }
+
+    .section-text {
+      max-width: 700px;
+      margin-bottom: 30px;
+      color: #b4b6c2;
+      line-height: 1.7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #ffffff18;
+      border-radius: 16px;
+      background: #ffffff08;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #b4b6c2;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 30px;
+      border-top: 1px solid #ffffff18;
+      color: #8f919c;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">YICEE<span>CREW</span></div>
+
+    <a
+      href="https://github.com/zwamlabs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="tag">Proyecto personal de desarrollo web</div>
+
+      <h1>
+        Creamos ideas con
+        <span>código.</span>
+      </h1>
+
+      <p class="description">
+        Yicee Crew es un proyecto personal dedicado a crear páginas,
+        aplicaciones, diseños y experimentos digitales utilizando
+        tecnologías web.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="#proyectos">
+          Ver proyectos
+        </a>
+
+        <a
+          class="button secondary"
+          href="https://github.com/zwamlabs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mi GitHub
+        </a>
+      </div>
+    </header>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <p class="section-text">
+        Este sitio reúne mis prácticas y proyectos relacionados con
+        programación y desarrollo web.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Yicee Website</h3>
+          <p>
+            Sitio oficial creado con HTML y CSS y publicado mediante
+            GitHub Pages.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Aplicaciones web</h3>
+          <p>
+            Próximos proyectos, herramientas y aplicaciones diseñadas
+            para funcionar desde el navegador.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Experimentos</h3>
+          <p>
+            Prácticas de diseño, programación e interfaces para mejorar
+            mis conocimientos.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Yicee Crew · Zwam Labs
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
